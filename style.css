@@ -10,7 +10,7 @@ html {
   box-sizing: border-box; }
 
 html,body,div,span, h1, h2, h3, h4, h5, h6, p,a,img,q,s,strong,ul,li,label,footer,header{
-  font-family: Bookman, URW Bookman L, serif;
+  font-family: Papyrus;
   margin: 0;
   padding: 0;
   border: 0;
@@ -79,9 +79,9 @@ h1,h2,h3{
   height: inherit;
   line-height: inherit;
   padding: 0 18.75px; /* 上下 左右 */
-  text-decoration: underline;
+  text-decoration: none;
 }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 414px) {
     body{
       padding-top: 44px;}
     #header {
@@ -120,11 +120,30 @@ h1,h2,h3{
   font-family: Bookman, URW Bookman L, serif; 
   font-style: italic;
 }
-.inner{
-  opacity: 1; /* 透明度 */
+
+
+
+/* Personal */
+#personal{
+  background-color: #CACBC1;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  z-index: 3; 
+  text-align: center;
+  z-index: 1;
 }
+#personal h2{
+  color: white;
+  font-weight: 800;
+}
+#personal ul,li{
+  color: white;
+  font-size: larger;
+  position: relative;
+}
+
 
 
 /* EDU */
@@ -140,6 +159,7 @@ h1,h2,h3{
   z-index: 1;
 }
 #edu ul,li{
+  font-family: Bookman, URW Bookman L, serif;
   font-size: larger;
 }
 #edu h2{
@@ -176,13 +196,14 @@ h1,h2,h3{
   text-align: center;
   font-size: 100px; }
 
-
+  
 /* Footer */
 #footer {
   background-color: black;
   color: #BEBFBD;
   padding: 120px 0 90px 0 ; }
   #footer a {
+    font-family: Bookman, URW Bookman L, serif;
     color: #C19892 }
   #footer h3{
     font-family: Bookman, URW Bookman L, serif;
@@ -224,7 +245,6 @@ h1,h2,h3{
   @media screen and (max-width: 480px) {
   #footer {
     padding: 30px 0 1.5px 0 ; } }
-
 
 /* Wrapper */
 .wrapper {
